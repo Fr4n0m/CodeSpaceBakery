@@ -3,7 +3,7 @@ import "@/components/ButtonComponents/DarkButtonComponent/dark-button.css";
 
 export default function DarkButtonComponent() {
   return (
-    <div>
+    <div className="hover:scale-90 transition-all easy-in-out">
       <label class="switch">
         <span class="sun">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
