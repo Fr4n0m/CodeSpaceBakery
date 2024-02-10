@@ -5,7 +5,8 @@ const Donut = require("../models/donutModel.js");
 const getDonuts = async (req, res) => {
   try {
     const data = await Donut.find();
-    res.status(200).json({ status: "succeeded", data, error: null });
+
+    res.status(200).json({ status: "succeeded", data: data, error: null });
   } catch (error) {
     res
       .status(500)
@@ -14,11 +15,11 @@ const getDonuts = async (req, res) => {
 };
 
 //obtener donut por id
-const getDonutbyId = async (req, res) => {
+const getDonutById = async (req, res) => {
   try {
     const id = req.params.id;
-    const user = await Donut.findById(id);
-    res.status(200).json({ status: "succeeded", user, error: null });
+    const donut = await Donut.findById(id);
+    res.status(200).json({ status: "succeeded", donut, error: null });
   } catch (error) {
     res
       .status(500)
@@ -31,30 +32,30 @@ const patchDonutById = async (req, res) => {
   try {
     const id = req.params.id;
     const { name, imageUrl, flavor, price } = req.body;
-    const user = await userModel.findById(id);
+    const donut = await Donut.findById(id);
 
-    if (!Donut) {
+    if (!donut) {
       return res.status(404).send("El donut no existe 😢");
     }
 
     if (name) {
-      Donut.name = req.body.name;
+      donut.name = req.body.name;
     }
 
     if (imageUrl) {
-      Donut.imageUrl = req.body.name;
+      donut.imageUrl = req.body.name;
     }
 
     if (flavor) {
-      Donut.flavor = req.body.flavor;
+      donut.flavor = req.body.flavor;
     }
 
     if (price) {
-      Donut.price = req.body.price;
+      donut.price = req.body.price;
     }
 
-    await Donut.save();
-    res.status(200).json({ status: "succeeded", user, error: null });
+    await donut.save();
+    res.status(200).json({ status: "succeeded", donut, error: null });
   } catch (error) {
     res
       .status(500)
@@ -75,7 +76,7 @@ const addDonut = async (req, res) => {
     });
 
     await newDonut.save();
-    res.status(201).json({ status: "succeeded", newUser, error: null });
+    res.status(201).json({ status: "succeeded", newDonut, error: null });
   } catch (error) {
     res
       .status(500)
@@ -100,7 +101,7 @@ const deleteDonut = async (req, res) => {
       throw new Error("ID de Donut no válido.");
     }
 
-    const objectId = mongoose.Types.ObjectId(id);
+    const objectId = new mongoose.Types.ObjectId(id);
 
     const deletedUser = await Donut.findOneAndDelete({ _id: objectId });
 
@@ -120,7 +121,7 @@ const deleteDonut = async (req, res) => {
 
 module.exports = {
   getDonuts,
-  getDonutbyId,
+  getDonutById,
   patchDonutById,
   deleteDonut,
   addDonut,

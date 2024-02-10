@@ -18,9 +18,11 @@ export default function HeaderComponent() {
       </div>
 
       <div>
-        <h1 className="ml-[140px] font-bold drop-shadow-lg text-2xl">
-          CodeSpace BAKERY
-        </h1>
+        <Link href={"/"}>
+          <h1 className="ml-[140px] font-bold drop-shadow-lg text-2xl hover:cursor-pointer">
+            CodeSpace BAKERY
+          </h1>
+        </Link>
       </div>
 
       <div className="flex justify-center items-center gap-5">

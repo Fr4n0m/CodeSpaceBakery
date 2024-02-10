@@ -3,6 +3,7 @@ import HeaderComponent from "@/components/HeaderComponents/HeaderComponent";
 import Link from "next/link";
 import "@/styles/globals.css";
 import "tailwindcss/tailwind.css";
+import DonutListComponent from "@/components/DonutsListComponents/DonutListComponent";
 
 export default function donutsList() {
   return (
@@ -12,6 +13,8 @@ export default function donutsList() {
       <h2>
         <Link href="/">Back to home</Link>
       </h2>
+
+      <DonutListComponent />
     </>
   );
 }

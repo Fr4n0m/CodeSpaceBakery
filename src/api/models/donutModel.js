@@ -4,7 +4,7 @@ const donutSchema = new mongoose.Schema({
   imageUrl: String,
   id: Number,
   name: String,
-  flavor: String,
+  flavor: [String],
   price: Number,
 });
 
