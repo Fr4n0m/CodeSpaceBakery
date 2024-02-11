@@ -1,0 +1,192 @@
+[{
+  "_id": {
+    "$oid": "65c79b71f119612cd673a372"
+  },
+  "imageUrl": "/assets/images/kinder_plus.jpg",
+  "name": "Kinder Plus",
+  "flavor": [
+    "kinder",
+    "vainilla"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c79c4cf119612cd673a374"
+  },
+  "imageUrl": "/assets/images/kinder.jpg",
+  "name": "Kinder Normal",
+  "flavor": [
+    "kinder",
+    "chocolate"
+  ],
+  "price": 3.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c79c75f119612cd673a376"
+  },
+  "imageUrl": "/assets/images/kinder_white.webp",
+  "name": "Kinder Plus White",
+  "flavor": [
+    "kinder",
+    "chocolate blanco"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c79c88f119612cd673a378"
+  },
+  "imageUrl": "/assets/images/lotuswhite.webp",
+  "name": "Lotus White",
+  "flavor": [
+    "Lotus",
+    "chocolate blanco"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c79c8ff119612cd673a37a"
+  },
+  "imageUrl": "/assets/images/lotus.jpg",
+  "name": "Lotus",
+  "flavor": [
+    "Lotus"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c8a13e971fb42feb684b48"
+  },
+  "imageUrl": "/assets/images/kinder_plus.jpg",
+  "name": "Kinder Plus",
+  "flavor": [
+    "kinder",
+    "vainilla"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c8a148971fb42feb684b49"
+  },
+  "imageUrl": "/assets/images/kinder_plus.jpg",
+  "name": "Kinder Plus",
+  "flavor": [
+    "kinder",
+    "vainilla"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c8a14c971fb42feb684b4a"
+  },
+  "imageUrl": "/assets/images/lotus.jpg",
+  "name": "Lotus",
+  "flavor": [
+    "Lotus"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c8a14e971fb42feb684b4b"
+  },
+  "imageUrl": "/assets/images/kinder_plus.jpg",
+  "name": "Kinder Plus",
+  "flavor": [
+    "kinder",
+    "vainilla"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c8a150971fb42feb684b4c"
+  },
+  "imageUrl": "/assets/images/kinder_plus.jpg",
+  "name": "Kinder Plus",
+  "flavor": [
+    "kinder",
+    "vainilla"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c8a152971fb42feb684b4d"
+  },
+  "imageUrl": "/assets/images/kinder_plus.jpg",
+  "name": "Kinder Plus",
+  "flavor": [
+    "kinder",
+    "vainilla"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c8a154971fb42feb684b4e"
+  },
+  "imageUrl": "/assets/images/kinder_plus.jpg",
+  "name": "Kinder Plus",
+  "flavor": [
+    "kinder",
+    "vainilla"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c8a15e971fb42feb684b4f"
+  },
+  "imageUrl": "/assets/images/lotus.jpg",
+  "name": "Lotus",
+  "flavor": [
+    "Lotus"
+  ],
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c8a17a971fb42feb684b50"
+  },
+  "imageUrl": "/assets/images/kinder.jpg",
+  "name": "Kinder Normal",
+  "flavor": [
+    "kinder",
+    "chocolate"
+  ],
+  "price": 3.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c8a17c971fb42feb684b51"
+  },
+  "imageUrl": "/assets/images/kinder.jpg",
+  "name": "Kinder Normal",
+  "flavor": [
+    "kinder",
+    "chocolate"
+  ],
+  "price": 3.99,
+  "__v": 0
+}]
