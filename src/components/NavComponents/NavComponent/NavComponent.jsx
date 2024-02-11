@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function NavComponent() {
   return (
-    <div className="grid justify-center items-center h-screen">
+    <div className="grid justify-center items-center m-56">
       <div className="flex-col-1 justify-center gap-10 xl:flex lg:flex">
         <div>
           <Link href="/createDonutPage/createDonut">
