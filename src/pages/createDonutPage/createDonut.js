@@ -1,15 +1,23 @@
 import React from "react";
-import HeaderComponent from "@/components/HeaderComponents/HeaderComponent";
-import Link from "next/link";
+import Header from "@/components/HeaderComponent/HeaderComponent";
 import "@/styles/globals.css";
 import "tailwindcss/tailwind.css";
+import BackButton from "@/components/ButtonComponents/BackButtonComponent/BackButtonComponent";
+import DonutList from "@/components/DonutsListComponents/DonutListComponent";
+import CreateDonut from "@/components/CreateDonutComponent/CreateDonutComponent";
 
 export default function createDonut() {
   return (
     <>
-      <HeaderComponent />
+      <Header />
 
-      <Link href="/">Back to home</Link>
+      <BackButton />
+
+      <div className="grid justify-center items-center gap-4 h-screen">
+        <CreateDonut />
+
+        {/* <DonutList /> */}
+      </div>
     </>
   );
 }

@@ -1,20 +1,18 @@
 import React from "react";
-import HeaderComponent from "@/components/HeaderComponents/HeaderComponent";
-import Link from "next/link";
+import Header from "@/components/HeaderComponent/HeaderComponent";
 import "@/styles/globals.css";
 import "tailwindcss/tailwind.css";
-import DonutListComponent from "@/components/DonutsListComponents/DonutListComponent";
+import DonutList from "@/components/DonutsListComponents/DonutListComponent";
+import BackButton from "@/components/ButtonComponents/BackButtonComponent/BackButtonComponent";
 
 export default function donutsList() {
   return (
     <>
-      <HeaderComponent />
+      <Header />
 
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
+      <BackButton />
 
-      <DonutListComponent />
+      <DonutList />
     </>
   );
 }
