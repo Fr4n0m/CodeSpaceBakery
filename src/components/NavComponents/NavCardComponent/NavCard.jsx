@@ -34,7 +34,7 @@ export default function ActionAreaCard({ text, img }) {
           component="img"
           height="140"
           image={img}
-          className="max-h-[200px]"
+          className="max-h-[180px]"
         />
         <CardContent>
           <Typography

@@ -19,7 +19,7 @@ export default function HeaderComponent() {
 
       <div>
         <Link href={"/"}>
-          <h1 className="ml-[140px] font-bold drop-shadow-lg text-2xl hover:cursor-pointer">
+          <h1 className="ml-[140px] font-bold drop-shadow-lg text-2xl hover:cursor-pointer hover:scale-110 transition duration-300 ease-in-out">
             CodeSpace BAKERY
           </h1>
         </Link>
