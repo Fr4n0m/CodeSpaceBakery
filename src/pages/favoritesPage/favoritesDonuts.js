@@ -13,10 +13,7 @@ export default function favoritesDonuts() {
 
       <BackButton />
 
-      <div className="container mx-auto py-8">
-        <h1 className="text-2xl font-bold mb-4">Lista de Favoritos</h1>
-        <FavoritesList />
-      </div>
+      <FavoritesList />
     </>
   );
 }
