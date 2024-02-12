@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 const PORT = 4000;
 const donutRouter = require("../api/routes/donutsRoutes.js");
@@ -34,7 +35,6 @@ db.on("disconnected", () => {
   console.log("La conexión a MongoDB se cerró correctamente.");
 });
 
-//Importamos el controlador que hemos creado.
 app.use("/donuts", donutRouter);
 
 app.use(express.json());

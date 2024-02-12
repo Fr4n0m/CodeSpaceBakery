@@ -2,6 +2,8 @@ const url = "http://localhost:4000";
 
 export const op_all = "/donuts";
 export const op_detail = "/donuts/:id";
+export const op_favorites = "/donuts/favorites";
+export const op_favorites_detail = "/donuts/favorites/:id";
 
 const HttpConnection = async (op, onSuccess, onError, method = "GET") => {
   const response = await fetch(`${url}${op}`, {

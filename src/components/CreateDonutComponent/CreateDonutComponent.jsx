@@ -33,16 +33,16 @@ const CreateDonut = () => {
 
       if (response.ok) {
         console.log("Donut añadido exitosamente");
+        console.log("Valores enviados:", updatedValues);
+
         resetForm();
       } else {
         console.error("Error al añadir el donut:", response.statusText);
+        console.log("Valores no enviados:", updatedValues);
       }
     } catch (error) {
       console.error("Error de red:", error);
     }
-
-    console.log("Valores enviados:", updatedValues);
-    resetForm();
   };
 
   const validate = (values) => {

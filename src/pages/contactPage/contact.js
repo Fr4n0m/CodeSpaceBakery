@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import Header from "@/components/HeaderComponent/HeaderComponent";
 import "tailwindcss/tailwind.css";
 import "@/styles/globals.css";
 import BackButton from "@/components/ButtonComponents/BackButtonComponent/BackButtonComponent";
@@ -7,7 +7,7 @@ import BackButton from "@/components/ButtonComponents/BackButtonComponent/BackBu
 export default function contact() {
   return (
     <>
-      <HeaderComponent />
+      <Header />
 
       <BackButton />
     </>

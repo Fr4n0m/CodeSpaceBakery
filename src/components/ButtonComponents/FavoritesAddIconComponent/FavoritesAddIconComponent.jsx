@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function FavoritesAddIconComponent() {
-  return <div>FavAddIcon</div>;
+  return (
+    <>
+      <img src="/assets/icons/favorite_border.svg"></img>
+    </>
+  );
 }

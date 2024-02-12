@@ -5,22 +5,25 @@ const {
   deleteDonut,
   addDonut,
 } = require("../controllers/donutController.js");
+const {
+  addToFavorites,
+  removeFromFavorites,
+} = require("../controllers/favoritesController.js");
 
 const router = require("express").Router();
 
-//obtener todos los donuts
 router.get("/", getDonuts);
 
-//obtener un donut por id
 router.get("/:id", getDonutById);
 
-//agregar un nuevo donut
 router.post("/", addDonut);
 
-//eliminar un donut
 router.delete("/:id", deleteDonut);
 
-//editar un donut
 router.patch("/:id", patchDonutById);
+
+router.post("/:id/favorites", addToFavorites);
+
+router.delete("/:id/favorites", removeFromFavorites);
 
 module.exports = router;

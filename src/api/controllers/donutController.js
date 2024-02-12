@@ -103,9 +103,9 @@ const deleteDonut = async (req, res) => {
 
     const objectId = new mongoose.Types.ObjectId(id);
 
-    const deletedUser = await Donut.findOneAndDelete({ _id: objectId });
+    const deletedDonut = await Donut.findOneAndDelete({ _id: objectId });
 
-    if (!deletedUser) {
+    if (!deletedDonut) {
       return res.status(404).json({ message: "No se encontró el donut." });
     }
 
