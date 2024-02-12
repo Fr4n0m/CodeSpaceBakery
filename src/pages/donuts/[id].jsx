@@ -7,6 +7,7 @@ import "@/styles/globals.css";
 import BackButton from "@/components/ButtonComponents/BackButtonComponent/BackButtonComponent";
 import DonutDetails from "@/components/DonutDetailsComponents/DonutDetailsComponent";
 import DonutList from "@/components/DonutsListComponents/DonutListComponent";
+import { Helmet } from "react-helmet";
 
 const DonutDetailPage = () => {
   const router = useRouter();
@@ -42,6 +43,12 @@ const DonutDetailPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>CodeSpace - Bakery</title>
+        <meta content="CodeSpace - Bakery" />
+        <link rel="icon" href="/assets/icons/donut-icon.png"></link>
+      </Helmet>
+
       <Header />
 
       <BackButton />
